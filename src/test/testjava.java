@@ -11,15 +11,11 @@ public class testjava {
 	Scanner scanner = new Scanner(System.in);	
 	Random random = new Random();  
 	
+	while (true) {
 	//Using while loop with rock, paper, scissors
 	System.out.print("Pick 1 for rock, 2 for paper, 3 for scissors"); //User asked to pick a number
 	int user = scanner.nextInt(); // User number named here
-	int userWins = 0;
-	int computerWins = 0;
-	
-	//introduce while loop
-	while (true) {
-		int comp = random.nextInt()%3+1; // Computer selects a random number between 1-3
+	int comp = random.nextInt()%3+1; // Computer selects a random number between 1-3
 
 	if ((user !=1) && (user !=2) && (user !=3)) {
 		System.out.println("Invalid input. You loose!");
@@ -35,15 +31,13 @@ public class testjava {
 		else { //Condition 3: doesn't meet either criteria above, so user has entered a number that beats the computer
 			System.out.println("You won!"); 
 		}
-			
-	if (userWins >= 1) {
-		System.out.print("Congratulations! You've won at least one time!");
+
 		break; 
 	}
 		}
 		}
 	}
- }
+ 
 
 
 
